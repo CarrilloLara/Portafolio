@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EDECE6;
+    color: #000;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: #EDECE6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 70px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #31565E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.nav a.active {
+    border-bottom: 4px solid #A7B6B9;
+}
+
+.language-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.language-btn img {
+    width: 50px;
+}
+
+/* INICIO */
+.inicio {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+    padding: 60px;
+}
+
+/* FOTO DE INICIO */
+.inicio-img {
+    width: 360px;
+    height: 520px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   transform: translateX(160px);
+}
+
+.inicio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top center;
+}
+
+/* TEXTO DE INICIO */
+.inicio-texto {
+    width: 650px;
+    min-height: 300px;
+    text-align: center; /* centrado como HOLA, SOY */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* AJUSTE SCRUM MASTER */
+.inicio-texto h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 1.4;
+    text-align: center; /* asegurar centrado */
+}
+
+.inicio-texto h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 1.4;
+    text-align: center; /* asegurar centrado */
+}
+
+.inicio-texto h1 {
+    font-size: 58px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    min-height: 75px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.redes {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.redes img {
+    width: 45px;
+}
+
+/* SOBRE MI */
+.sobre-mi {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    padding: 90px 70px;
+}
+
+.foto-sobre {
+    position: relative;
+}
+
+.foto-sobre img {
+    width: 240px;
+    height: 360px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.marco {
+    width: 240px;
+    height: 360px;
+    border: 3px solid #31565E;
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    z-index: 1;
+}
+
+.texto-sobre {
+    max-width: 560px;
+}
+
+.texto-sobre h2,
+.texto-sobre h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+.texto-sobre h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.texto-sobre h3 {
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.texto-sobre p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.btn-cv {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #31565E;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 14px 35px;
+    border-radius: 6px;
+}
+
+/* FORMACION */
+.formacion,
+.contacto {
+    min-height: 70vh;
+    padding: 100px 70px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formacion h2,
+.contacto h2 {
+    margin-bottom: 20px;
+}
+
+/* PROYECTOS */
+.proyectos {
+    padding: 100px 65px;
+}
+
+.titulo-proyectos {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    font-size: 34px;
+    margin-bottom: 70px;
+}
+
+.proyecto-card {
+    border: none; /* ❌ quita la línea */
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.proyecto-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: #000;
+}
+
+.proyecto-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.proyecto-card > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    background-color: #6F8A8D;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain; /* 🔥 muestra toda la imagen */
+    background-color: #ffffff; /* opcional para que no se vea vacío */
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+.info-proyecto {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.info-proyecto span {
+    background-color: #6F8A8D;
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.info-proyecto p,
+.info-proyecto li {
+    font-size: 14px;
+    color: #000;
+}
+
+.info-proyecto ul {
+    padding-left: 20px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #A7B6B9;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 0 50px;
+}
+
+.footer a {
+    display: flex;
+    align-items: center;
+    transform: translateX(10px);
+    text-decoration: none;
+    color: #31565E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.footer img {
+    width: 35px;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal img {
+    max-width: 85%;
+    max-height: 85%;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .inicio,
+    .sobre-mi {
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 25px;
+        text-align: center;
+    }
+
+    .inicio-img img {
+        width: 260px;
+        height: 380px;
+    }
+
+    .inicio-texto h1 {
+        font-size: 38px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-proyecto {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .proyectos {
+        padding: 80px 20px;
+    }
+
+    .proyecto-card h3 {
+        font-size: 22px;
+    }
+}
+Reemplaza **solo el CSS de Intereses** por este. Queda más limpio, centrado y profesional:
+
+```css
+/* =========================
+   INTERESES
+========================= */
+
+
+/* =========================
+   SECCIÓN INTERESES
+========================= */
+
+.intereses {
+    width: 100%;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #7cb5ec 0%,
+        #4f8fd3 30%,
+        #2f6eb8 65%,
+        #1f4f95 100%
+    );
+
+    padding: 120px 50px 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TÍTULO */
+
+.titulo-intereses {
+    width: 100%;
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #ffffff;
+
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+}
+
+/* GRID */
+
+.intereses-grid {
+    display: grid;
+
+    grid-template-columns: repeat(6, 180px);
+    gap: 35px;
+
+    justify-content: center;
+}
+
+/* FILA 1 */
+
+.interes-card:nth-child(1) {
+    grid-column: 1 / span 2;
+}
+
+.interes-card:nth-child(2) {
+    grid-column: 3 / span 2;
+}
+
+.interes-card:nth-child(3) {
+    grid-column: 5 / span 2;
+}
+
+/* FILA 2 CENTRADA */
+
+.interes-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.interes-card:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+/* TARJETAS */
+
+.interes-card {
+    background: rgba(255,255,255,0.95);
+
+    min-height: 280px;
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+
+    transition: all 0.3s ease;
+}
+
+.interes-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.interes-card i {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #f2f2f2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+    color: #1f5da8;
+}
+
+.interes-card h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #144785;
+}
+
+.interes-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+    .intereses-grid {
+        grid-template-columns: repeat(2, 320px);
+    }
+
+    .interes-card:nth-child(n) {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .titulo-intereses {
+        font-size: 38px;
+    }
+
+    .intereses-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+.intereses {
+    width: 100%;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #6ca7de 0%,
+        #3f7dc2 35%,
+        #1f5da8 70%,
+        #103f7c 100%
+    );
+
+    padding: 80px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ==========================
+   CONTACTO
+========================== */
+
+.contacto {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 20px;
+}
+
+.contacto-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-form {
+    width: 100%;
+    max-width: 560px;
+
+    background: linear-gradient(
+        135deg,
+        #3f7dc2 0%,
+        #1f5da8 50%,
+        #103f7c 100%
+    );
+
+    border-radius: 30px;
+
+    padding: 45px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.20);
+
+    position: relative;
+}
+
+.contacto-form h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.contacto-form h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: white;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+.contacto-form label {
+    display: block;
+
+    color: white;
+    font-weight: 600;
+
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    padding: 15px 18px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    background: white;
+
+    transition: all .3s ease;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    transform: scale(1.02);
+
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,.25);
+}
+
+.contacto-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+.contacto-form button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 16px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: linear-gradient(
+        90deg,
+        #84aef5,
+        #6f9ef0
+    );
+
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.contacto-form button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.20);
+}
+
+.mensaje-exito {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    background: #d4edda;
+
+    color: #155724;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .contacto-form {
+        padding: 35px 25px;
+    }
+
+    .contacto-form h2 {
+        font-size: 2.2rem;
+    }
+
+}
