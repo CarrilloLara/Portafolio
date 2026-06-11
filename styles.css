@@ -904,3 +904,43 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 600px) {
+
+    .inicio {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        width: 100% !important;
+        padding: 30px 20px !important;
+        overflow: hidden !important;
+    }
+
+    .inicio-img {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+        position: static !important;
+    }
+
+    .inicio-img img {
+        display: block !important;
+        position: static !important;
+        width: 230px !important;
+        max-width: 80% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        object-fit: contain !important;
+        transform: none !important;
+    }
+
+    .inicio-texto {
+        width: 100% !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+}
