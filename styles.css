@@ -727,3 +727,83 @@ body {
     }
 
 }
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 25px 60px;
+        gap: 30px;
+    }
+
+    .inicio-img img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .inicio-texto h1 {
+        font-size: 34px;
+    }
+
+    .inicio-texto h3 {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .inicio-texto h4,
+    .inicio-texto p {
+        font-size: 16px;
+    }
+
+    .redes {
+        justify-content: center;
+    }
+
+    .sobre-mi,
+    .intereses,
+    .proyectos,
+    .contacto {
+        padding: 80px 25px;
+    }
+
+    .intereses-grid,
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-contenedor {
+        width: 100%;
+    }
+
+    .contacto-form {
+        width: 100%;
+        padding: 25px;
+    }
+}
