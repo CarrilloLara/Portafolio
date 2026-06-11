@@ -68,19 +68,19 @@ body {
 
 .inicio-img {
     width: 360px;
-    height: 520px;
+    height: auto;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-   transform: translateX(160px);
 }
 
 .inicio-img img {
-    width: 100%;
-    height: 100%;
+    width: 320px;
+    max-width: 100%;
+    height: auto;
     object-fit: contain;
-    object-position: top center;
+    object-position: center;
 }
 
 /* TEXTO DE INICIO */
@@ -808,139 +808,96 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+/* ===== HEADER RESPONSIVE PROFESIONAL ===== */
 
-    body {
-        overflow-x: hidden;
-    }
+@media (max-width: 768px) {
 
     .header {
-        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
         width: 100%;
-        min-height: auto;
-        padding: 20px 15px;
-        flex-direction: column;
-        gap: 18px;
+        height: auto;
+        min-height: 75px;
+        padding: 12px 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
     }
 
     .logo {
-        width: 90px;
-        height: auto;
+        width: 55px;
+        flex-shrink: 0;
     }
 
     .nav {
+        flex: 1;
         display: flex;
-        flex-direction: column;
-        gap: 14px;
-        align-items: center;
-    }
-
-    .nav-link {
-        font-size: 15px;
-    }
-
-    .language-btn {
-        position: static;
-        margin-top: 5px;
-    }
-
-    .language-btn img {
-        width: 42px;
-        height: 42px;
-    }
-
-    .inicio {
-        min-height: auto;
-        padding: 40px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 25px;
-    }
-
-    .inicio-img {
-        width: 100%;
-        display: flex;
+        flex-direction: row;
         justify-content: center;
-        order: 1;
-    }
-
-    .inicio-img img {
-        width: 230px;
-        max-width: 85%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .inicio-texto {
-        width: 100%;
-        order: 2;
-    }
-
-    .inicio-texto h1 {
-        font-size: 32px;
-    }
-
-    .inicio-texto h3 {
-        font-size: 16px;
-        line-height: 1.4;
-    }
-
-    .redes {
-        justify-content: center;
+        align-items: center;
+        gap: 12px;
         flex-wrap: wrap;
     }
 
-    .sobre-mi,
-    .intereses,
-    .proyectos,
-    .contacto {
-        padding: 60px 20px;
+    .nav a {
+        font-size: 13px;
+        padding-bottom: 3px;
+        white-space: nowrap;
     }
 
-    .intereses-grid,
-    .proyectos-grid {
-        grid-template-columns: 1fr;
+    .language-btn {
+        flex-shrink: 0;
+        margin: 0;
     }
-}
 
-@media (max-width: 600px) {
+    .language-btn img {
+        width: 38px;
+        height: 38px;
+    }
 
     .inicio {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-        width: 100% !important;
-        padding: 30px 20px !important;
-        overflow: hidden !important;
+        padding-top: 40px;
+    }
+}
+@media (max-width: 768px) {
+
+    .footer {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 18px;
+
+        padding: 30px 25px;
+
+        background-color: #A7B6B9;
     }
 
-    .inicio-img {
-        width: 100% !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        margin: 0 auto !important;
-        position: static !important;
+    .footer a {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        gap: 12px;
+
+        text-decoration: none;
+
+        color: #31565E;
+        font-size: 16px;
+        font-weight: 600;
+
+        transform: none;
     }
 
-    .inicio-img img {
-        display: block !important;
-        position: static !important;
-        width: 230px !important;
-        max-width: 80% !important;
-        height: auto !important;
-        margin: 0 auto !important;
-        object-fit: contain !important;
-        transform: none !important;
-    }
-
-    .inicio-texto {
-        width: 100% !important;
-        margin: 0 auto !important;
-        text-align: center !important;
+    .footer img {
+        width: 34px;
+        height: 34px;
+        flex-shrink: 0;
     }
 }
