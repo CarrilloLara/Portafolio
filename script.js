@@ -33,7 +33,7 @@ const translations = {
         contacto: "Contacto",
 
         hola: "HOLA, SOY",
-        cargo: "SCRUM MASTER | GESTIÓN DE PROYECTOS TECNOLÓGICOS",
+        cargo: "SCRUM MASTER | GESTIÓN DE PROYECTOS TECNOLÓGICOS | TESTING",
         formacionTexto: "(EN FORMACIÓN)",
 
         acerca: "Acerca de mí",
@@ -115,7 +115,7 @@ const translations = {
         contacto: "Contact",
 
         hola: "HELLO, I AM",
-        cargo: "SCRUM MASTER | TECHNOLOGY PROJECT MANAGEMENT",
+        cargo: "SCRUM MASTER | TECHNOLOGY PROJECT MANAGEMENT | TESTING",
         formacionTexto: "(IN TRAINING)",
 
         acerca: "About me",
