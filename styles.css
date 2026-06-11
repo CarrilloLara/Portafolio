@@ -13,7 +13,6 @@ body {
     color: #000;
 }
 
-/* HEADER */
 .header {
     width: 100%;
     height: 90px;
@@ -58,7 +57,6 @@ body {
     width: 50px;
 }
 
-/* INICIO */
 .inicio {
     min-height: calc(100vh - 90px);
     display: flex;
@@ -68,7 +66,6 @@ body {
     padding: 60px;
 }
 
-/* FOTO DE INICIO */
 .inicio-img {
     width: 360px;
     height: 520px;
@@ -90,11 +87,10 @@ body {
 .inicio-texto {
     width: 650px;
     min-height: 300px;
-    text-align: center; /* centrado como HOLA, SOY */
+    text-align: center; 
     font-family: 'Montserrat', sans-serif;
 }
 
-/* AJUSTE SCRUM MASTER */
 .inicio-texto h3 {
     font-size: 16px;
     font-weight: 500;
@@ -230,7 +226,7 @@ body {
 }
 
 .proyecto-card {
-    border: none; /* ❌ quita la línea */
+    border: none; 
     border-radius: 10px;
     padding: 25px;
 }
@@ -266,8 +262,8 @@ body {
 .galeria img {
     width: 100%;
     height: 150px;
-    object-fit: contain; /* 🔥 muestra toda la imagen */
-    background-color: #ffffff; /* opcional para que no se vea vacío */
+    object-fit: contain; 
+    background-color: #ffffff; 
 }
 
 .galeria img:hover {
@@ -350,7 +346,6 @@ body {
     cursor: pointer;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
     .header {
         height: auto;
@@ -411,17 +406,7 @@ body {
         font-size: 22px;
     }
 }
-Reemplaza **solo el CSS de Intereses** por este. Queda más limpio, centrado y profesional:
 
-```css
-/* =========================
-   INTERESES
-========================= */
-
-
-/* =========================
-   SECCIÓN INTERESES
-========================= */
 
 .intereses {
     width: 100%;
@@ -443,7 +428,6 @@ Reemplaza **solo el CSS de Intereses** por este. Queda más limpio, centrado y p
     justify-content: center;
 }
 
-/* TÍTULO */
 
 .titulo-intereses {
     width: 100%;
@@ -458,7 +442,6 @@ Reemplaza **solo el CSS de Intereses** por este. Queda más limpio, centrado y p
     margin-bottom: 60px;
 }
 
-/* GRID */
 
 .intereses-grid {
     display: grid;
@@ -469,7 +452,6 @@ Reemplaza **solo el CSS de Intereses** por este. Queda más limpio, centrado y p
     justify-content: center;
 }
 
-/* FILA 1 */
 
 .interes-card:nth-child(1) {
     grid-column: 1 / span 2;
@@ -483,7 +465,6 @@ Reemplaza **solo el CSS de Intereses** por este. Queda más limpio, centrado y p
     grid-column: 5 / span 2;
 }
 
-/* FILA 2 CENTRADA */
 
 .interes-card:nth-child(4) {
     grid-column: 2 / span 2;
@@ -493,7 +474,6 @@ Reemplaza **solo el CSS de Intereses** por este. Queda más limpio, centrado y p
     grid-column: 4 / span 2;
 }
 
-/* TARJETAS */
 
 .interes-card {
     background: rgba(255,255,255,0.95);
@@ -589,9 +569,6 @@ Reemplaza **solo el CSS de Intereses** por este. Queda más limpio, centrado y p
     flex-direction: column;
     align-items: center;
 }
-/* ==========================
-   CONTACTO
-========================== */
 
 .contacto {
     width: 100%;
@@ -738,8 +715,6 @@ Reemplaza **solo el CSS de Intereses** por este. Queda más limpio, centrado y p
 
     font-weight: 600;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 768px) {
 
